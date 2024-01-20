@@ -1,8 +1,9 @@
 body {
   background: radial-gradient(
     circle,
-    rgba(63, 94, 251, 1) 0%,
-    rgba(252, 70, 107, 1) 100%
+    rgba(0, 212, 255, 1) 10%,
+    rgba(9, 9, 121, 1) 30%,
+    rgb(1, 0, 13) 70%
   );
 }
 
