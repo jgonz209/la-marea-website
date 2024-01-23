@@ -21,3 +21,7 @@ card3.setAttribute("class", "card");
 card4.setAttribute("class", "card");
 card5.setAttribute("class", "card");
 card6.setAttribute("class", "card");
+
+window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
+};
