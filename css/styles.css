@@ -78,14 +78,8 @@ i {
 }
 
 .box {
-  /* border: 5px solid #e96361; */
   margin: 0 70px 200px 70px;
 }
-
-/* a.underline-hover-effect {
-  text-decoration: none;
-  color: inherit;
-} */
 
 .underline-hover-effect {
   display: inline-block;
