@@ -9,19 +9,17 @@ body {
 
 .main {
   text-align: center;
-  padding: 10px;
-  margin-top: 0;
-  padding-top: 0;
+  padding: 0 10px 80px;
 }
 
 /*----------------------------------------------------------------------------*/
 
 .card {
-  border: 4px solid #e96361;
+  border: 12px solid #e96361;
   background-color: black;
   display: inline-block;
   margin-bottom: 40px;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
 /*----------------------------------------------------------------------------*/
@@ -46,15 +44,16 @@ body {
   height: 700px;
   width: 700px;
   border-radius: 50%;
+  overflow: hidden;
   pointer-events: none;
   margin-top: 5%;
 }
 
 .img {
-  border-radius: 10px;
-  margin: 5px 40px;
   height: 750px;
   width: 750px;
+  border-radius: 10px;
+  margin: 5px 40px;
 }
 
 /*----------------------------------------------------------------------------*/
