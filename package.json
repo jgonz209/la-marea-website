@@ -1,0 +1,23 @@
+{
+  "name": "la-marea-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.4.33",
+    "postcss-cli": "^11.0.0",
+    "postcss-pxtorem": "^6.1.0",
+    "uglify-js": "^3.17.4"
+  }
+}
