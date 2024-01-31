@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "minify-html": "html-minifier-terser src/index.html --collapse-whitespace --output=dist/index.html",
-    "optimize-css": "postcss src/css/styles.css --use autoprefixer cssnano postcss-pxtorem --output=dist/css/styles.css --no-map",
-    "transpile-js": "babel src/scripts/js.js -o dist/scripts/script.js --presets=@babel/preset-env",
-    "minify-js": "uglifyjs src/scripts/js.js --compress -o dist/scripts/script.js",
+    "minify-html": "html-minifier-terser index.html --collapse-whitespace --output=index.html",
+    "optimize-css": "postcss css/styles.css --use autoprefixer cssnano postcss-pxtorem --output=css/styles.css --no-map",
+    "transpile-js": "babel scripts/script.js -o scripts/script.js --presets=@babel/preset-env",
+    "minify-js": "uglifyjs scripts/script.js --compress -o scripts/script.js",
     "build": "npm run minify-html && npm run optimize-css && npm run transpile-js && npm run minify-js"
   },
   "author": "",
