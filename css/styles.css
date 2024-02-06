@@ -110,6 +110,40 @@ i {
 /*----------------------------------------------------------------------------*/
 
 @media (max-width: 600px) {
+  body {
+    width: fit-content;
+  }
+
+  .main {
+    /* margin: 0;
+    padding: 0; */
+    /* text-align: center; */
+  }
+
+  .logo-frame {
+    margin: 0;
+    margin-bottom: 10%;
+    padding: 0;
+    border: 2px solid red;
+  }
+
+  .logo {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    pointer-events: none;
+    margin-top: 5%;
+  }
+
+  .social-media {
+    border: 2px solid red;
+    margin: 0;
+  }
+
+  .icon-frame {
+    margin: 20px 30px 10px 30px;
+  }
 }
 
 /* @media (max-width: 600px) {
