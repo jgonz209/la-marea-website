@@ -191,7 +191,6 @@ i {
     margin: 0;
     margin-bottom: 10%;
     padding: 0;
-    border: 2px solid red;
   }
 
   .logo {
@@ -204,7 +203,6 @@ i {
   }
 
   .social-media {
-    border: 2px solid red;
     margin: 0;
   }
 
@@ -214,7 +212,6 @@ i {
 
   .menu-btn {
     margin: 80px 0 150px 0;
-    border: 2px solid red;
   }
 
   .btn {
