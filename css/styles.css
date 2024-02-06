@@ -44,7 +44,6 @@ i {
 }
 
 .icon-frame {
-  /* margin: 0 60px 200px 60px; */
   margin: 20px 60px 10px 60px;
 }
 
@@ -73,7 +72,6 @@ i {
 
 .card {
   border: 6px solid #e96361;
-  /* border: 5px solid rgba(0, 212, 255, 1); */
   background-color: rgb(1, 0, 13);
   display: inline-block;
   margin: 0 20px 50px 20px;
@@ -86,8 +84,6 @@ i {
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-size: 30px;
-  /* text-shadow: 2px 2px 3px #e96361; */
-  /* text-shadow: 2px 2px 3px rgba(0, 212, 255, 1); */
   margin: 20px 0;
 }
 
@@ -111,13 +107,11 @@ i {
 
 .menu-btn {
   margin: 80px 0 150px 0;
-  /* text-align: center; */
 }
 
 .btn {
   cursor: pointer;
   color: white;
-  /* background-color: rgb(1, 0, 13); */
   background-color: transparent;
   padding: 20px 50px;
   font-size: 20px;
@@ -192,8 +186,7 @@ i {
   }
 
   .logo-frame {
-    margin: 0;
-    margin-bottom: 10%;
+    margin: 5% 0 10% 0;
     padding: 0;
   }
 
