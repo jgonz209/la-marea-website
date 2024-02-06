@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>La Marea</title>
-    <meta name="description" content="La Marea Website" />
     <meta name="author" content="Jesse Gonzalez" />
+    <meta name="description" content="La Marea Website" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Marea</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <!--Jesse Gonzalez-->
   </head>
@@ -23,7 +24,7 @@
               rel="noopener noreferrer"
               id="icon-link-1"
               class="underline-hover-effect"
-              ><i class="fa-brands fa-square-facebook fa-7x"></i
+              ><i id="icon1" class="fa-brands fa-square-facebook fa-7x"></i
             ></a>
           </div>
           <div id="icon-frame2" class="icon-frame">
@@ -33,7 +34,7 @@
               rel="noopener noreferrer"
               id="icon-link-2"
               class="underline-hover-effect"
-              ><i class="fa-brands fa-instagram fa-7x"></i
+              ><i id="icon2" class="fa-brands fa-instagram fa-7x"></i
             ></a>
           </div>
           <div id="icon-frame3" class="icon-frame">
@@ -43,10 +44,28 @@
               rel="noopener noreferrer"
               id="icon-link-3"
               class="underline-hover-effect"
-              ><i class="fa-regular fa-envelope fa-7x"></i
+              ><i id="icon3" class="fa-regular fa-envelope fa-7x"></i
             ></a>
           </div>
         </div>
+        <!-- add menu -->
+        <div id="menu-btn" class="menu-btn">
+          <button id="myBtn" class="btn">Español</button>
+          <button id="myBtn2" class="btn">English</button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img
+              id="menu-english"
+              class="menu-img"
+              src="img/menu_english.jpg"
+              alt="Default image"
+            />
+          </div>
+        </div>
+        <!-- add menu end -->
         <div id="card1" class="card">
           <h1 id="title1" class="title">charmander</h1>
           <img id="img1" class="img" src="img/img1.jpeg" alt="Default image" />
@@ -71,7 +90,7 @@
               impacted by its surroundings. This helps it to evolve and adapt to
               a range of habitats. Eevee has the ability to evolve into eight
               different forms. Eevee can also change its appearance to that of
-              the Trainer who controls it.
+              the Trainer who controls it. When it growls it's angry.
             </p>
           </div>
         </div>
