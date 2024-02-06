@@ -1,3 +1,7 @@
+html {
+  background-color: rgb(1, 0, 13);
+}
+
 body {
   background: radial-gradient(
     circle,
@@ -15,16 +19,17 @@ body {
 /*----------------------------------------------------------------------------*/
 
 .logo-frame {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .logo {
-  height: 700px;
-  width: 700px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   overflow: hidden;
   pointer-events: none;
-  margin-top: 5%;
+  margin-top: 3%;
+  box-shadow: 0 0 25px 5px rgba(0, 212, 255, 1);
 }
 
 /*----------------------------------------------------------------------------*/
@@ -39,7 +44,8 @@ i {
 }
 
 .icon-frame {
-  margin: 0 70px 200px 70px;
+  /* margin: 0 60px 200px 60px; */
+  margin: 20px 60px 10px 60px;
 }
 
 .underline-hover-effect {
@@ -55,7 +61,7 @@ i {
   bottom: 0;
   width: 0;
   height: 2px;
-  background-color: #e96361;
+  background-color: rgba(0, 212, 255, 1);
   transition: width 0.25s ease-out;
 }
 
@@ -66,10 +72,11 @@ i {
 /*----------------------------------------------------------------------------*/
 
 .card {
-  border: 12px solid #e96361;
-  background-color: black;
+  border: 6px solid #e96361;
+  /* border: 5px solid rgba(0, 212, 255, 1); */
+  background-color: rgb(1, 0, 13);
   display: inline-block;
-  margin-bottom: 40px;
+  margin: 0 20px 50px 20px;
   border-radius: 15px;
 }
 
@@ -78,23 +85,158 @@ i {
   font-family: monospace;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  font-size: 70px;
-  text-shadow: 2px 2px 3px #e96361;
+  font-size: 30px;
+  /* text-shadow: 2px 2px 3px #e96361; */
+  /* text-shadow: 2px 2px 3px rgba(0, 212, 255, 1); */
   margin: 20px 0;
 }
 
 .img {
-  height: 750px;
-  width: 750px;
+  height: 400px;
+  width: 400px;
   border-radius: 10px;
-  margin: 5px 40px;
+  margin: 0 20px;
 }
 
 .description {
   color: white;
   font-family: monospace;
-  font-size: 45px;
-  width: 750px;
+  font-size: 22px;
+  width: 400px;
   text-align: left;
   margin: 30px auto;
+}
+
+/*----------------------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+}
+
+/* @media (max-width: 600px) {
+
+  .logo-frame {
+    margin-bottom: 10%;
+    border: 2px solid red;
+  }
+
+  .logo {
+    height: 700px;
+    width: 700px;
+    border-radius: 50%;
+    overflow: hidden;
+    pointer-events: none;
+    margin-top: 5%;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+
+  i {
+    color: white;
+  }
+
+  .icon-frame {
+    margin: 0 70px 200px 70px;
+  }
+
+  .card {
+    border: 12px solid #e96361;
+    background-color: rgb(1, 0, 13);
+    display: inline-block;
+    margin-bottom: 40px;
+    border-radius: 15px;
+  }
+
+  .title {
+    color: white;
+    font-family: monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-size: 70px;
+    text-shadow: 2px 2px 3px #e96361;
+    margin: 20px 0;
+  }
+
+  .img {
+    height: 750px;
+    width: 750px;
+    border-radius: 10px;
+    margin: 5px 40px;
+  }
+
+  .description {
+    color: white;
+    font-family: monospace;
+    font-size: 45px;
+    width: 750px;
+    text-align: left;
+    margin: 30px auto;
+  }
+} */
+
+/*----------------------------------------------------------------------------*/
+.menu-btn {
+  margin: 80px 0 150px 0;
+  /* text-align: center; */
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  /* background-color: rgb(1, 0, 13); */
+  background-color: transparent;
+  padding: 20px 50px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 4px solid rgba(0, 212, 255, 1);
+  margin: 0 17px;
+  margin-right: 32.5px;
+}
+
+.btn:hover {
+  color: rgb(1, 0, 13);
+  background-color: rgba(0, 212, 255, 1);
+  transition-duration: 0.45s;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  border-radius: 30px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
