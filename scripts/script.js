@@ -1,3 +1,13 @@
+var splashScreen = document.querySelector(".splash");
+var body = document.querySelector("body");
+setTimeout(() => {
+  splashScreen.style.opacity = 0;
+  body.classList.remove("disable-scroll");
+  setTimeout(() => {
+    splashScreen.classList.add("hidden");
+  }, 5000);
+}, 5000);
+
 // load page from top
 window.onbeforeunload = () => {
   window.scrollTo(0, 0);

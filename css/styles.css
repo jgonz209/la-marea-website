@@ -11,6 +11,53 @@ body {
   );
 }
 
+.disable-scroll {
+  overflow: hidden;
+}
+
+.splash {
+  background-color: rgb(1, 0, 13);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all ease-in-out 600ms;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  transition: 0.5s;
+  display: none;
+}
+
+.splash-logo {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 25px 5px rgba(0, 212, 255, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .splash-logo {
+    animation: splash-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes splash-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .main {
   text-align: center;
   padding: 0 10px 80px;
