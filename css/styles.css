@@ -222,6 +222,11 @@ i {
     margin: 0;
   }
 
+  .splash-logo {
+    height: 200px;
+    width: 200px;
+  }
+
   .main {
     text-align: center;
     margin: 0 auto;
