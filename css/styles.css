@@ -13,14 +13,13 @@ body {
 
 .splash {
   background-color: rgb(1, 0, 13);
-  height: 100%;
+  height: 1000svh;
   width: 100%;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: all ease-in-out 600ms;
-  z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,18 +149,19 @@ i {
 
 .menu-btn {
   margin: 80px 0 150px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
   cursor: pointer;
   color: white;
   background-color: transparent;
-  padding: 20px 50px;
+  padding: 20px 55px;
   font-size: 20px;
   border-radius: 15px;
   border: 4px solid rgba(0, 212, 255, 1);
-  margin: 0 17px;
-  margin-right: 32.5px;
+  margin: 0 20px;
 }
 
 .btn:hover {
@@ -229,8 +229,6 @@ i {
 
   .main {
     text-align: center;
-    margin: 0 auto;
-    padding: 0;
   }
 
   .logo-frame {
