@@ -1,24 +1,28 @@
-document.querySelector("body").style.position = "fixed";
-document.querySelector("body").style.overflow = "hidden";
-document.querySelector("#social-media").style.visibility = "hidden";
-
-document.onreadystatechange = function () {
-  setTimeout(function () {
-    if (document.readyState !== "complete") {
-      document.querySelector("body").style.visibility = "hidden";
-      document.querySelector("#splash").style.visibility = "visible";
-    } else {
-      document.querySelector("#splash").style.display = "none";
-      document.querySelector("body").style.overflow = "";
-      document.querySelector("body").style.position = "";
-      window.scrollTo(0, -1);
-      document.querySelector("body").style.visibility = "visible";
-      document.querySelector("#social-media").style.visibility = "visible";
-    }
-  }, 5000);
-};
-
 if (window.screen.width < 600) {
+  document.querySelector("#splash").style.visibility = "visible";
+  document.querySelector("#social-media").style.visibility = "hidden";
+
+  // Function to prevent default touchmove behavior
+  function preventDefaultTouchmove(event) {
+    event.preventDefault();
+  }
+
+  // Prevent scrolling on touchmove event
+  document.addEventListener("touchmove", preventDefaultTouchmove, {
+    passive: false,
+  });
+
+  window.onload = function () {
+    setTimeout(function () {
+      window.scrollTo(0, -1);
+      document.querySelector("#splash").style.display = "none";
+      document.querySelector("#social-media").style.visibility = "visible";
+
+      // Re-enable scrolling after 5 seconds
+      document.removeEventListener("touchmove", preventDefaultTouchmove);
+    }, 5000);
+  };
+
   // remove icon hover underline
   document
     .getElementById("icon-link-1")
@@ -29,14 +33,26 @@ if (window.screen.width < 600) {
   document
     .getElementById("icon-link-3")
     .classList.remove("underline-hover-effect");
+} else {
+  document.querySelector("#splash").style.visibility = "visible";
+  document.querySelector("#social-media").style.visibility = "hidden";
+  document.querySelector("body").style.overflow = "hidden";
+
+  window.onload = function () {
+    setTimeout(function () {
+      document.querySelector("#splash").style.display = "none";
+      document.querySelector("body").style.overflow = "";
+      window.scrollTo(0, -1);
+      document.querySelector("#social-media").style.visibility = "visible";
+    }, 5000);
+  };
 }
 
-// if (window.screen.width > 600) {
-//   // adjust icon size for larger screens
-//   // document.getElementById("icon1").className = "fa-brands fa-square-facebook fa-4x";
-//   // document.getElementById("icon2").className = "fa-brands fa-instagram fa-4x";
-//   // document.getElementById("icon3").className = "fa-regular fa-envelope fa-4x";
-// }
+// Check if the page is zoomed in
+if (window.innerWidth != window.screen.width) {
+  // Reload the page without the current scale level
+  location.reload(true);
+}
 
 //button for menu
 // Get the modal
@@ -64,8 +80,19 @@ span.onclick = function () {
 };
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
+window.addEventListener("click", function (event) {
+  if (event.target === modal) {
     modal.style.display = "none";
   }
-};
+});
+
+// Add an event listener for clicks on the body
+document.body.addEventListener("click", function (event) {
+  if (
+    !modal.contains(event.target) &&
+    event.target !== btn &&
+    event.target !== btn2
+  ) {
+    modal.style.display = "none";
+  }
+});
